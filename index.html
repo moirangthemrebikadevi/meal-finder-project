@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Finder</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <i class="fa-solid fa-utensils"></i>
+    <span>RECIPE FINDER</span>
+  </div>
+  <button class="menu-button" id="menuButton"><i class="fa-solid fa-bars"></i></button>
+</header>
+
+<aside class="side-menu" id="sideMenu">
+  <button class="close-button" id="closeButton"><i class="fa-solid fa-xmark"></i></button>
+  <h3>EXPLORE CATEGORIES</h3>
+  <div id="menuCategories"></div>
+</aside>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="search-box">
+      <input id="searchInput" type="text" placeholder="Search recipes here...">
+      <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <h2>What  are your favourite cuisines?</h2>
+    <p>PERSONALISE YOUR EXPERIENCE</p>
+  </div>
+</section>
+
+<main class="container">
+  <section>
+    <h2 class="title">MEALS</h2>
+    <p class="status" id="status">Search for a recipe or select a category.</p>
+    <div class="meal-grid" id="meals"></div>
+  </section>
+
+  <section id="details" class="details"></section>
+
+  <section class="category-section">
+    <h2 class="category-title">CATEGORIES</h2>
+    <div class="category-grid" id="categories"></div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
